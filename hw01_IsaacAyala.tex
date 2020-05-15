@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+%\documentclass[a4paper,12pt]{scrartcl}
+
+\usepackage{xltxtra}
+
+\input{../preamble.tex}
+
+\usepackage[spanish]{babel}
+
+% \setromanfont[Mapping=tex-text]{Linux Libertine O}
+% \setsansfont[Mapping=tex-text]{DejaVu Sans}
+% \setmonofont[Mapping=tex-text]{DejaVu Sans Mono}
+
+\title{Selección de balancín}
+\author{Isaac Ayala Lozano}
+\date{2020-01-24}
+
+\begin{document}
+\maketitle
+
+\section{Problema}
+
+Seleccionar un balancín que cumpla con las especificaciones mostradas en la tabla \ref{tab: specs}.
+
+\begin{table}[htb!]
+ \begin{center}
+\begin{tabular}{ll}
+\hline
+Carga & $> 100 \ \text{kgf}$ \\
+Carrera & $100 \ cm$ \\
+Peso neto & 20 a 30 kg\\
+Presión de trabajo & 6 a 8 bar\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Requisitos de operación.}
+\label{tab: specs}
+\end{table}
+
+\section{Propuesta}
+
+Se propone el uso del balancín \emph{ZAW035080} de Ingersoll Rand \cite{ingersollRand} para el manejo del material. 
+Las especificaciones técnicas del balancín (tabla \ref{tab: balancer specs}) cumplen con los requisitos de operación solicitados.
+
+El balancín se escoge de tipo neumático debido al ciclo de trabajo esperado. 
+Un balancín eléctrico no soporta ciclos de trabajo tan intensos como un balancín neumático.
+Se seleccionó un modelo capaz de levantar una carga 1.5 veces mayor a la carga nominal como medida de seguridad, teniendo así un factor de seguridad de 1.5.
+La carrera máxima supera la distancia de trabajo por un factor de dos.
+
+
+\begin{table}[htb!]
+ \begin{center}
+\begin{tabular}{ll}
+\hline
+Carga máxima (a 100 psi) & $158 \ \text{kgf}$ \\
+Carrera máxima & $2032 \ \text{mm}$ \\
+Peso neto & $28 \ \text{kg}$\\
+Tracción & Cable sencillo\\
+Botonera de control & Recta \\
+Tipo de alimentación & Neumática (100 psi | 6.9 bar)\\
+\hline
+\end{tabular}
+\end{center}
+\caption{ZAW035080 - Especificaciones técnicas.}
+\label{tab: balancer specs}
+\end{table}
+
+
+ \printbibliography
+
+\end{document}
